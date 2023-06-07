@@ -1,0 +1,20 @@
+CREATE DATABASE IF NOT EXISTS garage_v_parrot;
+
+CREATE TABLE IF NOT EXISTS roles
+(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50)
+);
+
+CREATE TABLE IF NOT EXISTS users
+(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    email VARCHAR(50)
+    password VARCHAR(60)
+    FOREIGN KEY(id_role) REFERENCES ROLE(id)
+);
+
+CREATE TABLE IF NOT EXISTS services,
+(
+    id 
+)
